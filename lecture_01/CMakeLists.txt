@@ -3,6 +3,11 @@ set(CMAKE_CXX_STANDARD 11)
 
 project(lecture_01)
 
+option(USE_STRING_FUNC "USE_STRING_FUNC" OFF)
+if(${USE_STRING_FUNC})
+	set (CMAKE_CXX_FLAGS "-D USE_STRING_FUNC")
+endif()
+
 set(lib_dir ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 set(lmakedouble_src 
@@ -21,5 +26,4 @@ add_executable(lecture_01 ${main_src})
 
 target_link_libraries(lecture_01 libmakedouble libprintstring)
 
-#set (CMAKE_CXX_FLAGS "-D USE_STRING_FUNC")
 
