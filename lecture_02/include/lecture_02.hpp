@@ -37,7 +37,6 @@ namespace amelnyk
 
         static const std::string strUsageEquals{"\n\treturn true if two given numbers are equal.\n"
                                            "\tuse precision co control the comparison\n"};
-
         void wrapEquals();
         bool equals(double, double, int precision);
 
