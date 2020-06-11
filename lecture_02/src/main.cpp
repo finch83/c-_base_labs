@@ -1,4 +1,4 @@
-#include "../include/lecture_02.hpp"
+#include "lecture_02.hpp"
 
 int main()
 {

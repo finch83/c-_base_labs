@@ -10,6 +10,7 @@ set(main_src ${src_dir}/main.cpp
 	${lib_dir}/lecture_02.hpp
 	${src_dir}/lecture_02.cpp)
 
+include_directories(lecture_02 ${lib_dir})
 
 add_executable(lecture_02 ${main_src})
 

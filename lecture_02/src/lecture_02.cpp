@@ -5,7 +5,7 @@
 #include <iterator>
 #include <cmath>
 
-#include "../include/lecture_02.hpp" 
+#include "lecture_02.hpp"
 
 namespace amelnyk
 {
@@ -28,7 +28,18 @@ namespace amelnyk
 
     namespace lecture02
     {
+        const std::string strUsageMain{"Select one of available functions using numbers [1..4] or 0 for exit:\n"
+                                       "\t0: Exit\n"
+                                       "\t1: equals\n"
+                                       "\t2: setBit\n"
+                                       "\t3: revertBit\n"
+                                       "\t4: addVector\n"
+                                       "function#: "};
+
         // equals
+        const std::string strUsageEquals{"\n\treturn true if two given numbers are equal.\n"
+                                         "\tuse precision co control the comparison\n"};
+
         bool equals(double A, double B, int precision)
         {
             double eps = 1;
@@ -59,6 +70,8 @@ namespace amelnyk
 
 
         // setBit
+        const std::string strUsageSetBit{"\n\ttake an integer and set specific bit to 0 or 1.\n"};
+
         void setBit(int& src, uint8_t bit)
         {
             uint8_t mask = 1 << (bit % CHAR_BIT);
@@ -84,6 +97,7 @@ namespace amelnyk
 
 
         // revertBit
+        const std::string strUsageRevertBit{"\n\ttake an integer and revert specified bit in it.\n"};
         void revertBit(int& src, uint8_t bit)
         {
             uint8_t mask = 1 << (bit % CHAR_BIT);
@@ -109,6 +123,9 @@ namespace amelnyk
 
 
         // addVector
+        const std::string strUsageAddVector{"\n\ttake 2 arrays (with size elements, add each item of array 1 to corresponding\n"
+                                            "\telement of array 2 and put the result in array dst).\n"};
+
         bool addVector(const int* src1, const int* src2, int* dst, std::size_t size)
         {
             int* startDst = dst;
