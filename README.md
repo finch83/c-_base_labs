@@ -12,3 +12,9 @@ bool equals(double, double, unit8_t precision) // return true if two given numbe
 void setBit(int& src, uint8_t bit) // take a integer and set specific bit to 0 or 1
 void revertBit(int& src, uint8_t bit) // take an integer and revert specified bit in it
 bool addVector(const int* src1, const int* src2, size, int* dts, std::size_t size); // take 2 arrays (with size elements, add each item of array 1 to corresponding element of array 2 and put the result in array dst)
+
+lecture_03
+1. Implement any sorting algorithm you like using cycles. Function should take an array as a parameter (and a size of it) and modify the array without creating a new one.
+2. Create a recursive function which prints given number (long) backwards, splitting it with spaces (for example  123456789 --> 9 8 7 6 5 4 3 2 1)
+
+
