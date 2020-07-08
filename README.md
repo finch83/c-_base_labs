@@ -17,4 +17,19 @@ lecture_03
 1. Implement any sorting algorithm you like using cycles. Function should take an array as a parameter (and a size of it) and modify the array without creating a new one.
 2. Create a recursive function which prints given number (long) backwards, splitting it with spaces (for example  123456789 --> 9 8 7 6 5 4 3 2 1)
 
+lecture_04
+1.1 Modify your 1st homework: take both libraries and add next function to each of them:
+void printName()
+which prints info about library used (use can use __PRETTY_FUNCTION__ macro for example, but feel free to do it your way)
+1.2 inside main.cpp call this function from each library (you don't need to use USE_STRING_FUNC flag for this part). Resolve any name conflict if it appears.
+
+2. Implement a class representation for 2-dimensional arrays (for int data).
+Let's assume class name is Array (but it's up to you to pick a name)
+Set dimensions and size at the moment of creation of a class instance (assuming it won't be changed afterwards).
+Implement next methods:
+void fillData -- to randomly fill the data
+bool equal -- to check if arrays are equal in size and values
+bool add - for adding values of an equal (in dimensions) array.
+bool subtract - the same as previous, but subtracting
+Array transpose - to change places column with rows and create a new object with these values
 
