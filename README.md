@@ -33,3 +33,24 @@ bool add - for adding values of an equal (in dimensions) array.
 bool subtract - the same as previous, but subtracting
 Array transpose - to change places column with rows and create a new object with these values
 
+lecture_05
+Create following functions for several arithmetical operations:
+int add(int, int)
+int divide(int, int)
+int multiply(int int)
+int subtract(int, int)
+
+using 'using' ot 'typedef' or std::function to get pointer (let's name it func_t)to any of these functions, create following structure:
+
+struct operation_t {
+    char operation;
+    func_t func;
+};
+
+also create an array which matches operations with corresponding functions:
+operation_t operations[] {
+...<insert your values here>
+};
+
+then iterate over this array and call each function with given arguments and print the results
+
